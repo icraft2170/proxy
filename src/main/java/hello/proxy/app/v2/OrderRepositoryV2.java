@@ -1,7 +1,9 @@
-package hello.proxy.app.v1;
+package hello.proxy.app.v2;
 
-public class OrderRepositoryV1Impl implements OrderRepositoryV1 {
-    @Override
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+public class OrderRepositoryV2 {
     public void save(String itemId) {
         // 저장 로직
         if (itemId.equals("ex")) {
